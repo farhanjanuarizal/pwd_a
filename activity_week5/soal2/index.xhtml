@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Form Reservasi Hotel</title>
+    </head>
+    <body>
+
+<h1>Form Reservasi Hotel</h1>
+
+<form action="" method="post">
+    <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+
+    <!-- Personal Data Section -->
+    <tr>
+    <td colspan="2" style="background-color:#f0f0f0; text-align:center;"><strong>Personal Data</strong></td>
+    </tr>
+    <tr>
+    <td width="30%"><label for="name"><strong>1. Name</strong></label></td>
+    <td><input type="text" id="name" name="name" size="30" /></td>
+    </tr>
+    <tr>
+    <td><strong>2. Gender</strong></td>
+    <td>
+    <input type="radio" id="male" name="gender" value="male" />
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Female</label>
+    </td>
+    </tr>
+    <tr>
+    <td><label for="email"><strong>3. Email Address</strong></label></td>
+    <td><input type="text" id="email" name="email" size="30" /></td>
+    </tr>
+    <tr>
+    <td><label for="telephone"><strong>4. Telephone Number</strong></label></td>
+    <td><input type="text" id="telephone" name="telephone" size="30" /></td>
+    </tr>
+
+    <!-- Reservation Room Form Section -->
+    <tr>
+    <td colspan="2" style="background-color:#f0f0f0; text-align:center;"><strong>Reservation Room Form</strong></td>
+    </tr>
+    <tr>
+    <td><label for="reservation_name"><strong>1. Reservation Name</strong></label></td>
+    <td><input type="text" id="reservation_name" name="reservation_name" size="30" /></td>
+    </tr>
+    <tr>
+    <td><label for="booking_date"><strong>2. Booking Date</strong></label></td>
+    <td><input type="text" id="booking_date" name="booking_date" size="30" /></td>
+    </tr>
+    <tr>
+    <td><label for="room_type"><strong>3. Room Type</strong></label></td>
+    <td>
+    <select id="room_type" name="room_type">
+    <option>Standard Room</option>
+    <option>Deluxe Room</option>
+    <option>Suite Room</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td><label for="bed_type"><strong>4. Bed Type</strong></label></td>
+    <td>
+    <select id="bed_type" name="bed_type">
+    <option>Single Bed</option>
+    <option>Double Bed</option>
+    <option>Twin Beds</option>
+    <option>Queen Size</option>
+    <option>King Size</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td><strong>5. Breakfast</strong></td>
+    <td>
+    <input type="radio" id="with_breakfast" name="breakfast" value="with" />
+    <label for="with_breakfast">With Breakfast</label>
+    <input type="radio" id="without_breakfast" name="breakfast" value="without" />
+    <label for="without_breakfast">Without Breakfast</label>
+    </td>
+    </tr>
+
+    <!-- Payment Section -->
+    <tr>
+    <td colspan="2" style="background-color:#f0f0f0; text-align:center;"><strong>Payment</strong></td>
+    </tr>
+    <tr>
+    <td><label for="checkin_date"><strong>1. Check-in Date</strong></label></td>
+    <td><input type="text" id="checkin_date" name="checkin_date" size="30" /></td>
+    </tr>
+    <tr>
+    <td><label for="checkout_date"><strong>2. Check-out Date</strong></label></td>
+    <td><input type="text" id="checkout_date" name="checkout_date" size="30" /></td>
+    </tr>
+    <tr>
+    <td><label for="payment_method"><strong>3. Payment Method</strong></label></td>
+    <td>
+    <select id="payment_method" name="payment_method">
+    <option>Credit Card</option>
+    <option>Debit Card</option>
+    <option>Cash</option>
+    <option>Bank Transfer</option>
+    </select>
+    </td>
+    </tr>
+
+    <!-- Submit Button -->
+    <tr>
+    <td colspan="2" style="text-align:center;">
+    <input type="submit" name="reserve" value="Submit Reservation" />
+    </td>
+    </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
